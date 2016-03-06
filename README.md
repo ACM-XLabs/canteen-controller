@@ -27,6 +27,6 @@ The app has to focus on getting every task completed within a very limited numbe
 We will be using a tablet for this for more screen space, but development for now will be done on phones, but the layout should be mindful of a larger screen. 
 There should be only one activity and main fragment.
 
-**Check the images in the documentation folder for images**
+**Check the images in the documentation folder for images** The images exist to portray the current basic structure, it is not a delineation of the final design.
 
 **Document will be updated further with more details.**
