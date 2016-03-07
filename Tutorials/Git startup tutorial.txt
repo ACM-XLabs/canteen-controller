@@ -34,6 +34,25 @@ This will show you all your remote repository if any. If you have a repository n
 else, run the command:
 git remote add origin https://github.com/<yourusername>/canteen-controller
 
+---------------------------------------------------------
+
+a. By the time you do this, the main repository will have changed by then, so you need to fetch the new content from their. For that, follow the following steps:
+
+a1. Create a remote for the main repositories 
+git remote add main https://github.com/ACM-XLabs/canteen-controller
+
+a2. Fetch the results
+git fetch main master
+
+a3. Merge it with your current repo 
+(This is where stuff usually goes wrong! Merge conflicts have to be manually resolved, we'll look at it later, since you're creating individual files, this shouldn't cause a problem yet)
+git merge main/master
+
+a4.Update your repo online
+git push origin master
+---------------------------------------------------------
+
+
 8.
 Next, add the changes you made (creating the new file) for staging through:
 git add --all
