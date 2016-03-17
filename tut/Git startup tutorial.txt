@@ -1,0 +1,78 @@
+This tutorial is to get you started for git. As a contributor you will need to be well versed with forks, branches,remotes, fetch, push,pull, add and commit.
+
+1.
+Download git. https://git-scm.com/downloads
+Git is different from github, you can read that from elsewhere, but you'll be using the git software to interact with github.
+
+2.
+Fork a repository.
+This can be done through the website, go to https://github.com/ACM-XLabs/canteen-controller and click the form button. A copy of the repository will be created in your github account (https://github.com/<yourusername>/canteen-controller).
+
+3.
+Learn about git.
+The git website holds the best git tutorial and docs, learning how to work with git is priceless, no matter where you end up working in the future as a computer engineer. 
+https://git-scm.com/doc
+
+4.
+Since the docs are very extensive, to begin we'll go thorugh the steps of making a small commit.
+To access git, you can right click and select "Open git bash"
+Before using git, you might have to set it up. Follow the steps here : https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+5.
+Now, to make a local copy of your repository that you forked, go to your desired location on your machine, then right click and open git bash.
+After that, clone the repository through the command :
+https://github.com/<yourusername>/canteen-controller
+
+6.
+You will now have the entire repository in your local machine.
+For our initial commit, open the tutorial folder, make a new text file with your name as the file name and inside write about your current android qualifications.
+
+7.
+Next, through git bash run the command : 
+git remote -v
+This will show you all your remote repository if any. If you have a repository named master with the url as (https://github.com/<yourusername>/canteen-controller), continue
+else, run the command:
+git remote add origin https://github.com/<yourusername>/canteen-controller
+
+---------------------------------------------------------
+
+a. By the time you do this, the main repository will have changed by then, so you need to fetch the new content from their. For that, follow the following steps:
+
+a1. Create a remote for the main repositories 
+git remote add main https://github.com/ACM-XLabs/canteen-controller
+
+a2. Fetch the results
+git fetch main master
+
+a3. Merge it with your current repo 
+(This is where stuff usually goes wrong! Merge conflicts have to be manually resolved, we'll look at it later, since you're creating individual files, this shouldn't cause a problem yet)
+git merge main/master
+
+a4.Update your repo online
+git push origin master
+---------------------------------------------------------
+
+
+8.
+Next, add the changes you made (creating the new file) for staging through:
+git add --all
+You can run the command 
+git status
+for knowing the current state of your local repo.
+
+9.
+After adding, commit the changes through
+git commit -m "<Enter commit message here>"
+Writing the commit message is extrememly important, to tell us what changes you have made. Make sure to keep it only a few words long but still be descrptive. For example "created text file Kushagra.txt"
+
+10.
+Now, push your changes online
+git push origin master
+this will ask for your github username and password and then you can check online at https://github.com/<yourusername>/canteen-controller for the changes
+
+11.
+To merge these changes with the original repository at https://github.com/ACM-XLabs/canteen-controller you need to generate a pull request.
+That can be done thorugh the website by simply clicking the pull request button.
+
+12.
+At any point if you go wrong and things aren't working, you might have to delete your entire local folder and start again from cloning; this almost always happen when you first start. (And even when you're really good at it :P)
