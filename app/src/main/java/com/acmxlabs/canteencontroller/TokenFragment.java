@@ -20,6 +20,10 @@ import java.util.List;
  */
 public class TokenFragment extends Fragment {
 
+    //create an empty arraylist
+    List<String> list = new ArrayList<String>();
+
+    ListView listview;
 
 
     List<String> list = new ArrayList<String>();
@@ -28,45 +32,86 @@ public class TokenFragment extends Fragment {
         // Required empty public constructor
     }
 
+<<<<<<< HEAD
     adapter2 adp;
+=======
+    adapter_token_frg adp;
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_token, container, false);
+<<<<<<< HEAD
          adp=new adapter2(this.getActivity(),list);
 
         grid = (ListView) view.findViewById(R.id.mobile_list);
         grid.setAdapter(adp);
+=======
+
+        //create a new adapter object
+         adp=new adapter_token_frg(this.getActivity(),list);
+
+        //get reference to the list view
+        listview = (ListView) view.findViewById(R.id.mobile_list);
+
+        //set adapter to the listview
+        listview.setAdapter(adp);
+
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
         return view;
 
     }
 
+<<<<<<< HEAD
     void change(String text)
     {
 
         list.add(text);
         adp=new adapter2(this.getActivity(),list);
         grid.setAdapter(adp);
+=======
+
+    //called by mainactivity to add elements dynamically
+    void change(String text)
+    {
+        //add text to the list
+        list.add(text);
+
+        //create a new adapter with the updated list and set the adapter
+        adp=new adapter_token_frg(this.getActivity(),list);
+        listview.setAdapter(adp);
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
 
     }
 
 }
 
+<<<<<<< HEAD
 class adapter2 extends BaseAdapter{
+=======
+class adapter_token_frg extends BaseAdapter{
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
 
 
     Context c;
     List<String> list;
 
+<<<<<<< HEAD
     adapter2(Context c, List<String> list) {
         //this.txt2 = text;
+=======
+    //constructor for adapter_token_frg class
+    adapter_token_frg(Context c, List<String> list) {
+
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
         this.list=list;
         this.c = c;
 
     }
 
+<<<<<<< HEAD
     @Override
     public int getCount() {
         //return txt2.length;
@@ -79,6 +124,23 @@ class adapter2 extends BaseAdapter{
         return list.get(position);
     }
 
+=======
+    //returns number of items in the list to display
+    @Override
+    public int getCount() {
+
+        return list.size();
+    }
+
+    //returns the object at a given position
+    @Override
+    public Object getItem(int position) {
+
+        return list.get(position);
+    }
+
+    //returns a id for every object which is index of arraylist in our case
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
     @Override
     public long getItemId(int position) {
         return position;
@@ -88,10 +150,18 @@ class adapter2 extends BaseAdapter{
         TextView txt_view;
         viewHolder(View v)
         {
+<<<<<<< HEAD
             txt_view= (TextView) v.findViewById(R.id.info_text2);
         }
     }
 
+=======
+            txt_view= (TextView) v.findViewById(R.id.token_card_text);
+        }
+    }
+
+    //returns a view that should be displayed
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row=convertView;
@@ -99,18 +169,37 @@ class adapter2 extends BaseAdapter{
 
         if(row==null)
         {
+<<<<<<< HEAD
             LayoutInflater inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             row=inflater.inflate(R.layout.linear_view,parent,false);
+=======
+            //enters if row is being created for the first time
+
+            LayoutInflater inflater= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+            //convert layout xml file to a java object
+            row=inflater.inflate(R.layout.linear_view,parent,false);
+
+            //create a new viewholder
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
             holder=new viewHolder(row);
             row.setTag(holder);
         }
         else
         {
+<<<<<<< HEAD
             holder= (viewHolder) row.getTag();
         }
 
 
+=======
+            //enters if view is already created
+            holder= (viewHolder) row.getTag();
+        }
+
+        //set text from arraylist to viewholder
+>>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
         holder.txt_view.setText(list.get(position));
 
         return row;
