@@ -1,9 +1,25 @@
+<<<<<<< HEAD
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.acmxlabs.canteencontroller.GridFragment">
 
+<<<<<<< HEAD
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:layout_gravity="left|top"
+        android:numColumns="auto_fit"
+        android:columnWidth="150dp"
+        android:stretchMode="spacingWidthUniform"/>
+</LinearLayout>
+=======
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
@@ -11,3 +27,4 @@
         android:text="Grid Frag" />
 
 </FrameLayout>
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45

@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/canteen-controller-master.iml" filepath="$PROJECT_DIR$/canteen-controller-master.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/canteen-controller.iml" filepath="$PROJECT_DIR$/canteen-controller.iml" />
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
     </modules>
   </component>
 </project>
