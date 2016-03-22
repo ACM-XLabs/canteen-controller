@@ -5,7 +5,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -32,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         transaction.commit();
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
     }
 }

@@ -1,15 +1,21 @@
 package com.acmxlabs.canteencontroller;
 
 
+<<<<<<< HEAD
 import android.content.Context;
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 
 
 /**
@@ -17,8 +23,12 @@ import android.widget.TextView;
  */
 public class TokenFragment extends Fragment {
 
+<<<<<<< HEAD
     String[] txt= {"AAAA", "BBBB", "CCCC", "DDDDD", "EEEE", "FFFFF", "GGGG"};
     ListView grid;
+=======
+
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
     public TokenFragment() {
         // Required empty public constructor
     }
@@ -28,6 +38,7 @@ public class TokenFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
         View view=inflater.inflate(R.layout.fragment_token, container, false);
 
         grid = (ListView) view.findViewById(R.id.mobile_list);
@@ -91,3 +102,9 @@ class adapter2 extends BaseAdapter{
         return row;
     }
 }
+=======
+        return inflater.inflate(R.layout.fragment_token, container, false);
+    }
+
+}
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,3 +13,18 @@
     </ListView>
 
 </LinearLayout>
+=======
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acmxlabs.canteencontroller.TokenFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello Token Frag" />
+
+</FrameLayout>
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45

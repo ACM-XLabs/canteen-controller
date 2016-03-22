@@ -1,15 +1,21 @@
 package com.acmxlabs.canteencontroller;
 
 
+<<<<<<< HEAD
 import android.content.Context;
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
+=======
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 
 
 /**
@@ -17,9 +23,13 @@ import android.widget.TextView;
  */
 public class GridFragment extends Fragment {
 
+<<<<<<< HEAD
     //String[] txt;
     String[] txt= {"AAAA", "BBBB", "CCCC", "DDDDD", "EEEE", "FFFFF", "GGGG"};
     GridView grid;
+=======
+
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
     public GridFragment() {
         // Required empty public constructor
     }
@@ -29,6 +39,7 @@ public class GridFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
         View view=inflater.inflate(R.layout.fragment_grid, container, false);
 
          grid = (GridView) view.findViewById(R.id.gridView);
@@ -97,4 +108,9 @@ class adapter extends BaseAdapter{
 
         return row;
     }
+=======
+        return inflater.inflate(R.layout.fragment_grid, container, false);
+    }
+
+>>>>>>> 350c5fd594300ee97f47843e0bcd94a054e01f45
 }
