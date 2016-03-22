@@ -4,8 +4,15 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity implements Communicator {
+
+    GridFragment gridFragment;
+    TokenFragment tokenFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Create all three fragment objects
-        GridFragment gridFragment = new GridFragment();
+         gridFragment = new GridFragment();
         SearchFragment searchFragment = new SearchFragment();
-        TokenFragment tokenFragment = new TokenFragment();
+         tokenFragment = new TokenFragment();
 
         //create an instance of fragment manager
         FragmentManager manager=getSupportFragmentManager();
@@ -31,5 +38,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         transaction.commit();
+
+
+    }
+
+    @Override
+    public void respond(View v) {
+        Log.v("buck", "entered respond fun");
+        TextView txt_view= (TextView) v.findViewById(R.id.info_text);
+        String txt=  txt_view.getText().toString();
+        Log.v("buck", txt);
+
+        tokenFragment.change(txt);
     }
 }
