@@ -14,7 +14,7 @@
         android:focusableInTouchMode="false">
 
         <TextView
-            android:id="@+id/info_text"
+            android:id="@+id/grid_card_text"
             android:text="AAAA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

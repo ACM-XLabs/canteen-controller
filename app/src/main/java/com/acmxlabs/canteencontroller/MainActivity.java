@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -44,11 +43,11 @@ public class MainActivity extends AppCompatActivity implements Communicator {
 
     @Override
     public void respond(View v) {
-        Log.v("buck", "entered respond fun");
-        TextView txt_view= (TextView) v.findViewById(R.id.info_text);
+        //extracting text from the view attribute
+        TextView txt_view= (TextView) v.findViewById(R.id.grid_card_text);
         String txt=  txt_view.getText().toString();
-        Log.v("buck", txt);
 
+        //calling 'change function' in token fragment with text as argument
         tokenFragment.change(txt);
     }
 }
