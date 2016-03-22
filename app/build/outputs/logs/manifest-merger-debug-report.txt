@@ -1,0 +1,62 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:3:5-45
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+application
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:9:9-35
+	android:allowBackup
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:10:9-76
+activity#com.acmxlabs.canteencontroller.MainActivity
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:11:9-18:20
+	android:screenOrientation
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:12:13-50
+	android:name
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:11:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] E:\Development\XLabs\canteen-controller\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Development\XLabs\canteen-controller\app\src\main\AndroidManifest.xml
