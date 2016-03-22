@@ -14,11 +14,7 @@
         android:focusableInTouchMode="false">
 
         <TextView
-<<<<<<< HEAD
-            android:id="@+id/info_text"
-=======
             android:id="@+id/grid_card_text"
->>>>>>> 23d438086ee520cc3c78e5082288817c5354be52
             android:text="AAAA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
