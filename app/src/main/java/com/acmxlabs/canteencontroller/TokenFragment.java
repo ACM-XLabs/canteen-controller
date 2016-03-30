@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
+import android.widget.GridView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class TokenFragment extends Fragment {
     //create an empty arraylist
     List<String> list = new ArrayList<String>();
 
-    ListView listview;
+    GridView token_frg_view;
 
     public TokenFragment() {
         // Required empty public constructor
@@ -40,11 +40,11 @@ public class TokenFragment extends Fragment {
         //create a new adapter object
          adp=new adapter_token_frg(this.getActivity(),list);
 
-        //get reference to the list view
-        listview = (ListView) view.findViewById(R.id.mobile_list);
+        //get reference to the grid view of token_frg
+        token_frg_view= (GridView) view.findViewById(R.id.mobile_list);
 
-        //set adapter to the listview
-        listview.setAdapter(adp);
+        //set adapter to the gridview of token_frg
+        token_frg_view.setAdapter(adp);
 
         return view;
 
@@ -59,8 +59,24 @@ public class TokenFragment extends Fragment {
 
         //create a new adapter with the updated list and set the adapter
         adp=new adapter_token_frg(this.getActivity(),list);
-        listview.setAdapter(adp);
+        token_frg_view.setAdapter(adp);
 
+    }
+
+    void view_cards_starting_with(String search_substr)
+    {
+        //create a new array list for elements starting with the given sub-str
+        List<String> search_list = new ArrayList<String>();
+
+        //iterate over the list of elements for searching strings starting with given sub-str
+        for (int i = 0; i < list.size(); i++) {
+            if(list.get(i).startsWith(search_substr))
+                search_list.add(list.get(i));
+        }
+
+        //create and set the adapter by the new arraylist
+        adp=new adapter_token_frg(this.getActivity(),search_list);
+        token_frg_view.setAdapter(adp);
     }
 
 }

@@ -22,7 +22,7 @@ import java.util.List;
 public class GridFragment extends Fragment {
 
     //initialise a dummy string array
-    String[] txt = {"AAAA", "BBBB", "CCCC", "DDDDD", "EEEE", "FFFFF", "GGGG"};
+    String[] txt = {"12", "22", "123", "14", "25", "136", "17"};
 
     //convert string array to arraylist
     List<String> list = new ArrayList<String>(Arrays.asList(txt));
