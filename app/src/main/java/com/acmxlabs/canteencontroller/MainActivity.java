@@ -51,4 +51,11 @@ public class MainActivity extends AppCompatActivity implements Communicator {
         //calling 'change function' in token fragment with text as argument
         tokenFragment.change(txt);
     }
+
+    @Override
+    public void search_fun(String search_substr)
+    {
+        //calling view_cards_sarting_with function of token_frg to display the appropriate cards
+        tokenFragment.view_cards_starting_with(search_substr);
+    }
 }
